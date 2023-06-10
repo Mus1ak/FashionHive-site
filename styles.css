@@ -1,8 +1,18 @@
+@font-face {
+    font-family: 'font1';
+    src: url('Fonts/aileron/Aileron-Regular.otf') format('opentype');
+}
+
+@font-face {
+    font-family: 'font2';
+    src: url('Fonts/amelaryas/Amelaryas.otf') format('opentype');
+}
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: amelaryas;
+    font-family: font2;
 }
 
 html,
@@ -22,7 +32,7 @@ body {
 
 }
 
-.page1{
+.page1 {
     height: 100%;
     width: 100%;
     display: flex;
@@ -33,8 +43,9 @@ body {
     z-index: -1;
 }
 
-.nav span, .page1 span{
-    color:#e6ce58;
+.nav span,
+.page1 span {
+    color: #e6ce58;
 }
 
 .nav {
@@ -67,7 +78,7 @@ body {
     color: black;
     font-weight: 600;
     overflow: hidden;
-    font-family: aileron;
+    font-family: font1;
 }
 
 .text2 a:nth-last-child(1) {
@@ -124,7 +135,7 @@ body {
     object-fit: cover;
     left: 5%;
     top: 20%;
-    
+
 }
 
 .page1 .img2 {
@@ -187,20 +198,20 @@ body {
 
 }
 
-.butn{
+.butn {
     position: relative;
     overflow: hidden;
 }
 
-.butn{
+.butn {
     margin-top: 20px;
     border: 2px solid black;
     border-radius: 45px;
     position: relative;
     overflow: hidden;
-}   
+}
 
-.butn a{
+.butn a {
     padding: 3px 25px;
     text-decoration: none;
     letter-spacing: 3px;
@@ -211,7 +222,7 @@ body {
     font-size: 12px;
 }
 
-.butn a .gold{
+.butn a .gold {
     background-color: #FFE569;
     width: 100%;
     height: 100%;
@@ -226,7 +237,7 @@ body {
     left: 100%;
 }
 
-.textmid{   
+.textmid {
     width: 45%;
     display: flex;
     justify-content: center;
@@ -234,11 +245,11 @@ body {
     position: absolute;
     bottom: 10%;
     /* background-color: red; */
-    
+
 }
 
 .textmid p {
-    font-family: aileron;
+    font-family: font1;
     text-align: center;
     font-size: 17px;
     letter-spacing: 2px;
@@ -264,7 +275,7 @@ body {
 }
 
 
-.page2{
+.page2 {
     height: 100vh;
     width: 100%;
     background-color: white;
@@ -276,26 +287,28 @@ body {
     position: relative;
 }
 
-.page2 h5{
+.page2 h5 {
     font-size: 1vw;
-    font-family: aileron;
+    font-family: font1;
     letter-spacing: 3px;
     z-index: 10;
 }
 
-.hero{
+.hero {
     width: 80%;
     z-index: 10;
 
 }
-.hero h4{
+
+.hero h4 {
     margin: 30px 0;
     font-size: 1vw;
     text-align: center;
     letter-spacing: 3px;
     line-height: 3vw;
 }
-.about-us{
+
+.about-us {
     letter-spacing: 3px;
     border: 2px solid black;
     border-radius: 45px;
@@ -308,21 +321,23 @@ body {
     color: black;
     cursor: pointer;
 }
-.golden{
+
+.golden {
     position: absolute;
     width: 100%;
     height: 100%;
     background-color: #FFE569;
     z-index: -1;
     top: 0%;
-    left: -100%; 
-    transition: 0.4s ease;   
+    left: -100%;
+    transition: 0.4s ease;
 }
-.about-us:hover .golden{
+
+.about-us:hover .golden {
     left: 0%;
 }
 
-.sidepart{
+.sidepart {
     position: absolute;
     /* background-color: red; */
     height: 100%;
@@ -331,31 +346,36 @@ body {
     display: flex;
     justify-content: space-evenly;
 }
-.cont1{
+
+.cont1 {
     width: 40%;
     height: 100%;
     /* background-color: yellow; */
     overflow: hidden;
     margin-right: 15px;
 }
-.cont2{
+
+.cont2 {
     width: 100%;
     height: 100%;
     /* background-color: blue; */
     overflow: hidden;
 
 }
-.cont1 img{
+
+.cont1 img {
     height: 60%;
     width: 100%;
     object-fit: cover;
 }
-.cont2 img{
+
+.cont2 img {
     height: 35%;
     width: 100%;
     object-fit: cover;
 }
-.rightpart{
+
+.rightpart {
     display: flex;
     width: 65%;
     height: 100%;
@@ -367,18 +387,20 @@ body {
     left: 35%;
 }
 
-.both{
+.both {
     display: flex;
     justify-content: space-between;
     align-items: center;
     flex-direction: row;
 }
-.foot{
+
+.foot {
     position: relative;
     height: 20%;
     width: 100%;
 }
-.foot .sect{
+
+.foot .sect {
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -390,10 +412,10 @@ body {
     color: white;
 }
 
-.sect h5{
+.sect h5 {
     font-size: 22px;
     letter-spacing: 3px;
-    cursor:default;
+    cursor: default;
 }
 
 .socials {
@@ -404,7 +426,7 @@ body {
 .socials a {
     color: white;
     margin: 0 25px;
-    font-size: 30px;    
+    font-size: 30px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -413,24 +435,27 @@ body {
     text-decoration: none;
     transition: color 0.4s ease;
 }
-.socials a:hover{
+
+.socials a:hover {
     color: #FFE569;
 }
-.sect h6{
+
+.sect h6 {
     font-size: 17px;
     letter-spacing: 3px;
     opacity: 0.7;
-    font-family: aileron;
-    cursor:default;
+    font-family: font1;
+    cursor: default;
 }
-.sect h6 .sp{
-    font-family: aileron;
+
+.sect h6 .sp {
+    font-family: font1;
     padding-bottom: 2px;
     border-bottom: 2px solid transparent;
     transition: border-bottom 0.4s ease;
-    
-}
-.sect h6 .sp:hover{
-    border-bottom: 2px solid #FFE569;
+
 }
 
+.sect h6 .sp:hover {
+    border-bottom: 2px solid #FFE569;
+}
